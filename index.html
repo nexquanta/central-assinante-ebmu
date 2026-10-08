@@ -57,7 +57,7 @@
           </button>
         </li>
         <li>
-          <button type="button" class="option" data-option="Preciso de ajuda">
+          <button type="button" class="option" data-option="Preciso de ajuda" data-goto="ajuda">
             <span class="option-number" aria-hidden="true">05</span>
             <span class="option-title">Preciso de ajuda</span>
             <span class="option-desc">Não encontrou o que procurava? Veja como falar com a nossa equipe.</span>
@@ -185,6 +185,38 @@
       <h2 id="dificuldades-acesso">E se eu tiver dificuldades</h2>
       <p>Se você não conseguir entrar ou acessar os conteúdos, consulte a seção “Problemas para entrar” da Central do Assinante.</p>
       <button type="button" class="btn btn-secondary" data-goto="problemas">Problemas para entrar</button>
+    </section>
+
+    <p class="back"><button type="button" class="btn btn-link" data-goto="home">&larr; Voltar para a Central</button></p>
+   </div>
+
+   <div class="view" id="view-ajuda" data-view="ajuda" hidden>
+    <section class="intro" aria-labelledby="titulo-ajuda">
+      <h1 id="titulo-ajuda" tabindex="-1">Preciso de ajuda</h1>
+      <p class="lead">Encontre orientações para suas dúvidas sobre cursos, assinatura e acesso.</p>
+    </section>
+
+    <section class="panel panel-highlight" aria-labelledby="ajuda-cursos">
+      <h2 id="ajuda-cursos">Dúvidas sobre acesso aos cursos</h2>
+      <p>Após a contratação e a liberação do acesso, os conteúdos educacionais são acessados no ambiente da Hotmart, usando a conta associada à compra.</p>
+      <button type="button" class="btn btn-secondary" data-goto="problemas">Ver problemas para entrar</button>
+    </section>
+
+    <section class="panel" aria-labelledby="ajuda-assinatura">
+      <h2 id="ajuda-assinatura">Dúvidas sobre a assinatura</h2>
+      <p>Pagamentos e cancelamentos são administrados pela Hotmart. Consulte a seção “Minha assinatura” para orientações gerais sobre o gerenciamento do seu plano.</p>
+      <button type="button" class="btn btn-secondary" data-goto="assinatura">Ver minha assinatura</button>
+    </section>
+
+    <section class="panel" aria-labelledby="ajuda-login">
+      <h2 id="ajuda-login">Dificuldades de login</h2>
+      <p>A autenticação e a recuperação de senha são realizadas pela Hotmart, não diretamente pela EBMU. Para orientações sobre problemas de login, consulte a seção abaixo.</p>
+      <button type="button" class="btn btn-secondary" data-goto="problemas">Problemas para entrar</button>
+    </section>
+
+    <section class="panel" aria-labelledby="canais-oficiais">
+      <h2 id="canais-oficiais">Como encontrar os canais oficiais da EBMU</h2>
+      <p>Consulte os canais de atendimento publicados nos materiais oficiais da EBMU e nas comunicações institucionais recebidas. Confira se a informação é de uma fonte oficial antes de compartilhar dados pessoais ou financeiros. Nenhum canal específico é indicado nesta Central enquanto não houver um endereço oficial validado.</p>
     </section>
 
     <p class="back"><button type="button" class="btn btn-link" data-goto="home">&larr; Voltar para a Central</button></p>
