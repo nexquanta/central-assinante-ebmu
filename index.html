@@ -50,7 +50,7 @@
           </button>
         </li>
         <li>
-          <button type="button" class="option" data-option="Como funciona meu acesso">
+          <button type="button" class="option" data-option="Como funciona meu acesso" data-goto="acesso">
             <span class="option-number" aria-hidden="true">04</span>
             <span class="option-title">Como funciona meu acesso</span>
             <span class="option-desc">Saiba como o acesso é liberado e o que esperar durante a assinatura.</span>
@@ -152,6 +152,41 @@
     </section>
 
     <p id="aviso-problemas" class="notice" role="status" aria-live="polite"></p>
+    <p class="back"><button type="button" class="btn btn-link" data-goto="home">&larr; Voltar para a Central</button></p>
+   </div>
+
+   <div class="view" id="view-acesso" data-view="acesso" hidden>
+    <section class="intro" aria-labelledby="titulo-acesso">
+      <h1 id="titulo-acesso" tabindex="-1">Como funciona meu acesso</h1>
+      <p class="lead">Entenda como contratar, acessar os cursos e gerenciar sua assinatura.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="como-contratar">
+      <h2 id="como-contratar">Como contratar</h2>
+      <p>A EBMU oferece assinaturas mensais e anuais. A contratação é realizada pela Hotmart.</p>
+    </section>
+
+    <section class="panel panel-highlight" aria-labelledby="como-acessar-cursos">
+      <h2 id="como-acessar-cursos">Como acessar os cursos</h2>
+      <p>Após a contratação e a liberação do acesso, você utiliza o ambiente da Hotmart para acessar os conteúdos educacionais.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="qual-email-utilizar">
+      <h2 id="qual-email-utilizar">Qual e-mail utilizar</h2>
+      <p>Entre na Hotmart utilizando o endereço de e-mail associado à compra da sua assinatura.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="gerenciar-acesso">
+      <h2 id="gerenciar-acesso">Onde gerenciar minha assinatura</h2>
+      <p>Os pagamentos, as renovações e os cancelamentos da assinatura são administrados pela Hotmart.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="dificuldades-acesso">
+      <h2 id="dificuldades-acesso">E se eu tiver dificuldades</h2>
+      <p>Se você não conseguir entrar ou acessar os conteúdos, consulte a seção “Problemas para entrar” da Central do Assinante.</p>
+      <button type="button" class="btn btn-secondary" data-goto="problemas">Problemas para entrar</button>
+    </section>
+
     <p class="back"><button type="button" class="btn btn-link" data-goto="home">&larr; Voltar para a Central</button></p>
    </div>
   </main>
