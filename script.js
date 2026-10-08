@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const views = document.querySelectorAll(".view");
   const aviso = document.getElementById("aviso");
   const avisoCursos = document.getElementById("aviso-cursos");
+  const avisoAssinatura = document.getElementById("aviso-assinatura");
 
   function showView(name) {
     let target = null;
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!target) return;
     aviso.textContent = "";
     avisoCursos.textContent = "";
+    avisoAssinatura.textContent = "";
     window.scrollTo(0, 0);
     const heading = target.querySelector("h1");
     if (heading) heading.focus();
@@ -33,5 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("btn-area-cursos").addEventListener("click", () => {
     avisoCursos.textContent = "No MVP, este botão direcionará o assinante ao ambiente de cursos da Hotmart.";
+  });
+
+  document.getElementById("btn-gerenciar-assinatura").addEventListener("click", () => {
+    avisoAssinatura.textContent = "O direcionamento para a Hotmart será configurado posteriormente.";
+  });
+
+  document.getElementById("btn-ajuda-assinatura").addEventListener("click", () => {
+    avisoAssinatura.textContent =
+      "Os canais de atendimento da EBMU serão informados nesta Central em uma próxima etapa. Para pagamentos, renovações e cancelamentos, consulte a Hotmart.";
   });
 });

@@ -36,7 +36,7 @@
           </button>
         </li>
         <li>
-          <button type="button" class="option" data-option="Minha assinatura">
+          <button type="button" class="option" data-option="Minha assinatura" data-goto="assinatura">
             <span class="option-number" aria-hidden="true">02</span>
             <span class="option-title">Minha assinatura</span>
             <span class="option-desc">Entenda a situação e as informações gerais da sua assinatura.</span>
@@ -88,6 +88,33 @@
       <button type="button" class="btn btn-secondary" data-goto="problemas">Ver problemas de acesso</button>
     </section>
 
+    <p class="back"><button type="button" class="btn btn-link" data-goto="home">&larr; Voltar para a Central</button></p>
+   </div>
+
+   <div class="view" id="view-assinatura" data-view="assinatura" hidden>
+    <section class="intro" aria-labelledby="titulo-assinatura">
+      <h1 id="titulo-assinatura" tabindex="-1">Minha assinatura</h1>
+      <p class="lead">Encontre orientações sobre seu plano e o gerenciamento da sua assinatura.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="planos-disponiveis">
+      <h2 id="planos-disponiveis">Planos disponíveis</h2>
+      <p>A EBMU oferece assinaturas mensais e anuais. Consulte as informações do plano contratado no ambiente de gerenciamento da Hotmart.</p>
+    </section>
+
+    <section class="panel panel-highlight" aria-labelledby="gerenciar-assinatura">
+      <h2 id="gerenciar-assinatura">Gerenciar minha assinatura</h2>
+      <p>Pagamentos, renovações, cancelamentos e informações financeiras são administrados pela Hotmart.</p>
+      <button type="button" class="btn btn-primary" id="btn-gerenciar-assinatura">Gerenciar assinatura na Hotmart</button>
+    </section>
+
+    <section class="panel" aria-labelledby="duvidas-assinatura">
+      <h2 id="duvidas-assinatura">Dúvidas sobre minha assinatura</h2>
+      <p>Se tiver dificuldades ou dúvidas, use o botão abaixo para consultar as orientações de atendimento. Para questões sobre pagamentos, renovação ou cancelamento, consulte o gerenciamento da assinatura na Hotmart.</p>
+      <button type="button" class="btn btn-secondary" id="btn-ajuda-assinatura">Preciso de ajuda</button>
+    </section>
+
+    <p id="aviso-assinatura" class="notice" role="status" aria-live="polite"></p>
     <p class="back"><button type="button" class="btn btn-link" data-goto="home">&larr; Voltar para a Central</button></p>
    </div>
 
