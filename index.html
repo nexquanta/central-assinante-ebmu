@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Central do Assinante EBMU</title>
+  <meta name="description" content="Central do Assinante EBMU – Evidence-Based Mindfulness University.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container">
+      <p class="brand">
+        <span class="brand-name">EBMU</span>
+        <span class="brand-full">Evidence-Based Mindfulness University</span>
+      </p>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container main">
+   <div class="view" id="view-home" data-view="home">
+    <section class="intro" aria-labelledby="titulo">
+      <h1 id="titulo" tabindex="-1">Central do Assinante</h1>
+      <p class="lead">Encontre rapidamente o que você precisa.</p>
+    </section>
+
+    <section aria-label="Opções da Central do Assinante">
+      <ul class="options">
+        <li>
+          <button type="button" class="option" data-option="Acessar meus cursos" data-goto="cursos">
+            <span class="option-number" aria-hidden="true">01</span>
+            <span class="option-title">Acessar meus cursos</span>
+            <span class="option-desc">Veja como chegar aos cursos e conteúdos disponíveis para você.</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="option" data-option="Minha assinatura">
+            <span class="option-number" aria-hidden="true">02</span>
+            <span class="option-title">Minha assinatura</span>
+            <span class="option-desc">Entenda a situação e as informações gerais da sua assinatura.</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="option" data-option="Problemas para entrar" data-goto="problemas">
+            <span class="option-number" aria-hidden="true">03</span>
+            <span class="option-title">Problemas para entrar</span>
+            <span class="option-desc">Orientações para quando não for possível acessar a plataforma.</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="option" data-option="Como funciona meu acesso">
+            <span class="option-number" aria-hidden="true">04</span>
+            <span class="option-title">Como funciona meu acesso</span>
+            <span class="option-desc">Saiba como o acesso é liberado e o que esperar durante a assinatura.</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="option" data-option="Preciso de ajuda">
+            <span class="option-number" aria-hidden="true">05</span>
+            <span class="option-title">Preciso de ajuda</span>
+            <span class="option-desc">Não encontrou o que procurava? Veja como falar com a nossa equipe.</span>
+          </button>
+        </li>
+      </ul>
+
+      <p id="aviso" class="notice" role="status" aria-live="polite"></p>
+    </section>
+   </div>
+
+   <div class="view" id="view-cursos" data-view="cursos" hidden>
+    <section class="intro" aria-labelledby="titulo-cursos">
+      <h1 id="titulo-cursos" tabindex="-1">Acessar meus cursos</h1>
+      <p class="lead">Encontre o caminho correto para acessar os conteúdos disponíveis em sua assinatura.</p>
+    </section>
+
+    <section class="panel panel-highlight" aria-labelledby="area-cursos">
+      <h2 id="area-cursos">Área de cursos</h2>
+      <p>Os cursos e conteúdos contratados são disponibilizados por meio do ambiente da Hotmart.</p>
+      <button type="button" class="btn btn-primary" id="btn-area-cursos">Ir para a área de cursos</button>
+      <p id="aviso-cursos" class="notice" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="dificuldade">
+      <h2 id="dificuldade">Está com dificuldade para entrar?</h2>
+      <p>Problemas de acesso podem ser consultados na Central do Assinante.</p>
+      <button type="button" class="btn btn-secondary" data-goto="problemas">Ver problemas de acesso</button>
+    </section>
+
+    <p class="back"><button type="button" class="btn btn-link" data-goto="home">&larr; Voltar para a Central</button></p>
+   </div>
+
+   <div class="view" id="view-problemas" data-view="problemas" hidden>
+    <section class="intro" aria-labelledby="titulo-problemas">
+      <h1 id="titulo-problemas" tabindex="-1">Problemas para entrar</h1>
+      <p class="lead">Esta tela estará disponível nas próximas etapas.</p>
+    </section>
+    <p class="back"><button type="button" class="btn btn-link" data-goto="home">&larr; Voltar para a Central</button></p>
+   </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; EBMU – Evidence-Based Mindfulness University</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
